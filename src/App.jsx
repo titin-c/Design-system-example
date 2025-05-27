@@ -30,7 +30,7 @@ import SelectsDevPage from "./pages/desarrollo/SelectsDevPage";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/Design-system-example/">
       <ScrollToTop />
       <Layout>
         <Routes>
