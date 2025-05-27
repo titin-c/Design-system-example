@@ -1,0 +1,108 @@
+:root {
+  /* botones */
+
+  --input-color-txt: var(--txt-darker);
+  --input-color-br: var(--br-light);
+  --input-color-bg: var(--bg-lighter);
+
+  --input-color-bg-hover: var(--bg-darker);
+  --input-color-br-hover: var(--br-darker);
+  --input-color-txt-hover: var(--txt-lighter);
+
+  --input-color-bg-disabled: var(--grey-10);
+  --input-color-br-disabled: var(--grey-20);
+  --input-color-txt-disabled: var(--grey-30);
+
+  --input-color-bg-active: var(--blue-10);
+  --input-color-br-active: var(--br-primary);
+  --input-color-txt-active: var(--txt-primary);
+
+  --input-color-txt-primary: var(--txt-lighter);
+  --input-color-br-primary: var(--primary-color);
+  --input-color-bg-primary: var(--primary-color);
+
+  --input-color-txt-danger: var(--txt-danger);
+  --input-color-br-danger: var(--br-danger);
+  --input-color-bg-danger: var(--bg-lighter);
+
+  --input-padding-top: var(--padding-m);
+  --input-padding-bottom: var(--padding-m);
+  --input-padding-left: var(--padding-l);
+  --input-padding-right: var(--padding-l);
+
+  --input-small-padding-top: var(--space-s);
+  --input-small-padding-left: var(--space-m);
+
+  --input-border-radius: var(--border-radius-l);
+
+  --input-gap: var(--space-m);
+
+}
+
+.input-container {
+  position: relative;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+
+.input-field {
+  background: var(--input-color-bg);
+  color: var(--input-color-txt);
+  border: 1px solid var(--input-color-br);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 16px;
+  width: fit-content;
+  font-weight: lighter;
+}
+
+label.field-label {
+  padding-left: 12px;
+  display: block;
+  padding-bottom: 4px;
+  font-size: 14px;
+}
+
+.arterisco {
+  color: var(--txt-danger);
+}
+
+.icon-container {
+  display: flex;
+  height: 30px;
+  width: 32px;
+  border-radius: 4px;
+  border: 1px solid var(--input-color-br);
+  align-items: center;
+  justify-content: center;
+}
+
+.input-icon {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.input-left-icon .icon-container{border-right: none;
+border-radius: 4px 0 0 4px;}
+
+.input-left-icon .input-field {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+  padding-left: 36px;
+}
+.input-right-icon .icon-container{
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+right: 0;}
+  
+  
+  .input-right-icon .input-field {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+    padding-right: 36px;
+  }

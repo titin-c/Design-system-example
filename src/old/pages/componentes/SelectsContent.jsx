@@ -1,0 +1,8 @@
+export default function SelectsCompoContent() {
+  return (
+    <div>
+      <h2>Selects</h2>
+      <p>Ejemplo de Selects en el Design System.</p>
+    </div>
+  );
+}

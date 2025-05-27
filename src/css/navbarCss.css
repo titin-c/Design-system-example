@@ -1,0 +1,12 @@
+img.style-example-image {
+    max-width: 200px;
+}
+img.style-example-image {
+    max-width: 200px;
+}
+.wrap-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 16px;
+}
